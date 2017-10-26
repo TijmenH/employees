@@ -1,0 +1,20 @@
+/**
+*  ENTRY SCSS -
+*     1. Imports all configs
+*     2. Imports all components
+*/
+
+// Configs
+@import 'config/reset'; // Reset default styling
+@import 'config/colors'; // Color vars
+@import 'config/vars'; // All other vars
+@import 'config/mixins'; // Mixins
+@import 'config/fonts'; // Font setup
+@import 'config/typography'; // Typography setup
+
+// Layout
+@import 'layout/header';
+@import 'layout/footer';
+
+// Components
+@import 'components/list';

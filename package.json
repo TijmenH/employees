@@ -7,8 +7,8 @@
   "author": "TijmenH <tijmenhelder@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node app.js",
-    "build": "webpack",
+    "start": "npm run build && node app.js",
+    "build": "webpack --progress --colors",
     "watch": "webpack --progress --colors --watch"
   },
   "devDependencies": {
