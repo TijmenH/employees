@@ -1,0 +1,15 @@
+.main-header {
+	padding: $default-gap;
+	background: $primary-color;
+
+	&__content {
+		width: $site-width;
+		margin: 0 auto;
+	}
+
+	&__logo {
+		font-family: $poiret-one;
+		color: $secondary-color;
+		font-size: 4rem;
+	}
+}

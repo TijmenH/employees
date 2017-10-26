@@ -13,8 +13,10 @@
 @import 'config/typography'; // Typography setup
 
 // Layout
+@import 'layout/page';
 @import 'layout/header';
 @import 'layout/footer';
 
 // Components
 @import 'components/list';
+@import 'components/filter';
