@@ -1,15 +1,25 @@
 .main-header {
-	padding: $default-gap;
 	background: $primary-color;
 
 	&__content {
-		width: $site-width;
+		padding: $default-gap;
+		max-width: $site-width;
+		width: 100%;
 		margin: 0 auto;
+
+		@include breakpoint(sm) {
+			width: 100%;
+			margin: 0;
+		}
 	}
 
 	&__logo {
 		font-family: $poiret-one;
 		color: $secondary-color;
 		font-size: 4rem;
+
+		@include breakpoint(sm) {
+			font-size: 2rem;
+		}
 	}
 }

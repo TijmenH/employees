@@ -1,7 +1,12 @@
 .filter {
 	width: 25%;
-	margin-right: 12px;
 	padding: $default-gap;
 	border: 1px solid $tertiary-color;
 	border-radius: $default-radius;
+	margin-right: 12px;
+
+	@include breakpoint(sm) {
+		width: 100%;
+		margin: 0 0 12px 0;
+	}
 }

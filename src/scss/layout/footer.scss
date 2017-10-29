@@ -1,13 +1,18 @@
 .main-footer {
 	background: $primary-color;
+	height: 60px;
 	position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 
 	&__content {
-		width: $site-width;
+		max-width: $site-width;
 		margin: 0 auto;
 		padding: $default-gap;
+
+		@include breakpoint(sm) {
+			width: 100%;
+		}
 	}
 }

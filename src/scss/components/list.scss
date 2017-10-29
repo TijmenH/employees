@@ -1,12 +1,21 @@
 .list {
-	padding: $default-gap;
+	padding: 12px;
 	display: flex;
 	flex-direction: row;
+
+	@include breakpoint(sm) {
+		flex-direction: column;
+	}
 
 	&__wrapper {
 		width: 75%;
 		padding: $default-gap;
 		border: 1px solid $tertiary-color;
 		border-radius: $default-radius;
+
+		@include breakpoint(sm) {
+			width: 100%;
+			margin: 0;
+		}
 	}
 }

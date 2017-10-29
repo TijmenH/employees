@@ -1,4 +1,46 @@
 /*
-* Set-up off all mixins
+* Set-up of all mixins
 *
 */
+
+@mixin breakpoint($class) {
+  @if $class == xs {
+    @media only screen and (max-width: 320px) {
+			@content;
+		}
+  }
+
+  @else if $class == s {
+    @media only screen and (max-width: 414px) {
+			@content;
+		}
+  }
+
+  @else if $class == sm {
+    @media only screen and (max-width: 768px) {
+			@content;
+		}
+  }
+
+  @else if $class == m {
+    @media only screen and (max-width: 1024px) {
+			@content;
+		}
+  }
+
+	@else if $class == lg-min {
+    @media only screen and (min-width: 1200px) {
+			@content;
+		}
+  }
+
+	@else if $class == lg-max {
+    @media only screen and (max-width: 1200px) {
+			@content;
+		}
+  }
+
+  @else {
+    @warn "Allowed values for breakpoint: xs, s, sm, m, lg ";
+  }
+}

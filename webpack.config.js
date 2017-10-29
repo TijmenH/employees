@@ -1,8 +1,7 @@
 /**
 * @description
-* All JS and SCSS in the src folders will be transpiled and put in the WP theme.
+* All JS and SCSS in the src folders will be transpiled, minified and outputted in the build folder
 *
-* @TODO minify
 */
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
