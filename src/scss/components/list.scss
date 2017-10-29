@@ -7,6 +7,10 @@
 		flex-direction: column;
 	}
 
+	&__header {
+		margin-bottom: 12px;
+	}
+
 	&__wrapper {
 		width: 75%;
 		padding: $default-gap;
@@ -17,5 +21,9 @@
 			width: 100%;
 			margin: 0;
 		}
+	}
+
+	&__content {
+		display: flex;
 	}
 }

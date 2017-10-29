@@ -4,3 +4,13 @@
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
+html {
+	height: 100%;
+}
+
+body {
+	position: relative;
+	padding-bottom: $footer-height; // Make sure footer won't overlap with content
+	min-height: 100%;
+}

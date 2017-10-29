@@ -8,13 +8,14 @@ import '../scss/main.scss'; // @NOTE webpack will strip this out
 * @description
 * Module imports
 */
-// Nope
+import Employees from './modules/employees';
 
 /**
 * @description
 * Event listener to load all modules as soon the DOM is loaded
 */
 document.addEventListener('DOMContentLoaded', () => {
-  // Silence
-	console.log("I'm ok!");
+	if (document.querySelector('.employees-page')) {
+		new Employees();
+	}
 });

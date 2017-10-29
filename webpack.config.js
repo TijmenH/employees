@@ -42,6 +42,15 @@ module.exports = {
           use: [{ loader: 'css-loader', options: { minimize: true } }, 'sass-loader']
         })
       },
+			{
+        test: /\.(png|jpg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {}
+          }
+        ]
+      }
     ]
   },
   plugins: [

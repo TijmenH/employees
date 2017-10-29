@@ -1,0 +1,35 @@
+.list-item {
+	display: flex;
+	flex-wrap: wrap;
+
+	&__profile-wrapper {
+		width: 30%;
+		background: url('../img/placeholder.png') no-repeat;
+		background-position: center top;
+		background-size: 100% auto;
+
+		img {
+			object-fit: cover;
+			width: 100%;
+		}
+	}
+
+	&__details-wrapper {
+		padding: 0 6px;
+		width: 70%;
+	}
+
+	&__tag-cloud {
+		width: 100%;
+		padding: 6px 0;
+	}
+
+	&__tag {
+		color: $secondary-color;
+		margin-bottom: 3px;
+		display: inline-block;
+		padding: 6px;
+		border-radius: 8px;
+		background: #a5a5a5;
+	}
+}
