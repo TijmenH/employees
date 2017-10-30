@@ -2,12 +2,10 @@
 	display: flex;
 	flex-wrap: wrap;
 	width: 50%;
+	margin-bottom: 24px;
 
 	&__profile-wrapper {
 		width: 30%;
-		background: url('../img/placeholder.png') no-repeat;
-		background-position: center top;
-		background-size: 100% auto;
 
 		img {
 			object-fit: cover;
