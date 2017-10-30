@@ -9,6 +9,11 @@
 
 	&__heading {
 		margin-bottom: 24px;
+
+		@include breakpoint(s) {
+			padding: 24px;
+			margin: 0;
+		}
 	}
 
 	&__wrapper {
@@ -16,6 +21,10 @@
 		padding: $default-gap;
 		border: 1px solid $tertiary-color;
 		border-radius: $default-radius;
+
+		@include breakpoint(s) {
+			padding: 0;
+		}
 
 		@include breakpoint(sm) {
 			width: 100%;

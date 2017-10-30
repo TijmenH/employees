@@ -4,8 +4,21 @@
 	width: 50%;
 	margin-bottom: 24px;
 
+	@include breakpoint(s) {
+		padding: 12px;
+		width: 100%;
+
+		&:nth-child(even) {
+			background: #f2f2f2;
+		}
+	}
+
 	&__profile-wrapper {
 		width: 30%;
+
+		@include breakpoint(s) {
+			width: 100%;
+		}
 
 		img {
 			object-fit: cover;
@@ -14,8 +27,13 @@
 	}
 
 	&__details-wrapper {
-		padding: 0 6px;
+		padding: 0 12px;
 		width: 70%;
+
+		@include breakpoint(s) {
+			width: 100%;
+			padding: 0;
+		}
 	}
 
 	&__tag-cloud {
@@ -30,5 +48,14 @@
 		padding: 6px;
 		border-radius: 8px;
 		background: #a5a5a5;
+	}
+
+	&__name {
+		margin-bottom: 6px;
+	}
+
+	&__role {
+		font-weight: 600;
+		margin-bottom: 12px;
 	}
 }
