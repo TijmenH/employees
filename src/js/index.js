@@ -16,6 +16,6 @@ import Employees from './modules/employees';
 */
 document.addEventListener('DOMContentLoaded', () => {
 	if (document.querySelector('.employees-page')) {
-		new Employees();
+		// new Employees();
 	}
 });

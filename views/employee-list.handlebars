@@ -2,19 +2,34 @@
 	<article class="list">
 		<div class="filter">
 			<div class="filter__wrapper">
-				<div class="filter__header">
+				<div class="filter__heading">
 					<h2>Filter</h2>
 				</div>
 			</div>
 		</div>
 		<div class="list__wrapper">
-			<div class="list__header">
+			<div class="list__heading">
 				<h1>Employees</h1>
 			</div>
+
 			<div class="list__content">
-				<p>content 1</p>
-				<p>content 2</p>
-				<p>content 3</p>
+				{{#each employees as |employee key|}}
+					<div class="list-item">
+						<div class="list-item__profile-wrapper">
+							<img src="{{employee.profileImage}}" />
+						</div>
+						<div class="list-item__details-wrapper">
+							<h3 class="list-item__name">{{employee.name}}</h3>
+							<p class="list-item__role">{{employee.role}}</p>
+							<p class="list-item__description">{{employee.bio}}</p>
+						</div>
+						<div class="list-item__tag-cloud">
+							{{#each employee.skills as |skill|}}
+								<span class="list-item__tag">{{skill}}</span>
+							{{/each}}
+						</div>
+					</div>
+				{{/each}}
 			</div>
 		</div>
 	</article>

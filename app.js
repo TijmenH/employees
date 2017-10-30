@@ -13,7 +13,8 @@ app.use('/public', express.static(__dirname + '/build'));
 app.get('/', (req, res) => {
 	// Get data using request package
 	request('http://sys4.open-web.nl/employees.json', (error, response, data) => {
-		res.render('employee-list', {data: data})
+		const employees = JSON.parse(data).employees;
+		res.render('employee-list', {employees})
 	});
 });
 
